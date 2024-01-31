@@ -3,6 +3,7 @@ export const paths = [
     "assets",
     "components",
     "configs",
+    "layout",
     "pages",
     "router",
     "services",

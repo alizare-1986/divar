@@ -13,7 +13,7 @@ function Router() {
     queryKey: ["profile"],
     queryFn: getProfile,
   });
-  console.log(data);
+
   if (isLoading) return <Loader/>;
   return (
     <Routes>

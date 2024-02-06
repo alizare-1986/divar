@@ -17,7 +17,7 @@ function Router() {
   if (isLoading) return <Loader/>;
   return (
     <Routes>
-      <Route index element={<HomePage />} />
+      <Route path="/" element={<HomePage />} />
       <Route
         path="/dashboard"
         element={data ? <DashboardPage /> : <Navigate to={"/auth"} />}

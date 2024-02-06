@@ -1,8 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
+import Role from "./Role";
+
 
 function Header() {
+  
+ 
   return (
-    <header
+  
+<header
       style={{
         display: "flex",
         flexDirection: "row",
@@ -30,27 +35,8 @@ function Header() {
           justifyContent: "space-between",
         }}
       >
-        <Link to={"/auth"}>
-          <span
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-            }}
-          >
-            <img src="profile.svg" style={{ width: 30, marginLeft: 10 }} />
-            <p
-              style={{
-                fontSize: 17,
-                fontWeight: "500",
-                marginLeft: 40,
-                color: "gray",
-              }}
-            >
-              دیوار من
-            </p>
-          </span>
-        </Link>
+        <Role/>
+
         <Link
           to={"/dashboard"}
           style={{
@@ -65,6 +51,9 @@ function Header() {
         </Link>
       </div>
     </header>
+   
+    
+    
   );
 }
 

@@ -11,6 +11,7 @@ const CheckOtpForm = ({ mobile, setCode, code, setAuthStep }) => {
     if (response) {
       setCookie(response.data);
       navigate("/");
+      window.location.reload()
     }
 
     if (error) alert("مشکلی در دریافت کد پیش آمده است");
